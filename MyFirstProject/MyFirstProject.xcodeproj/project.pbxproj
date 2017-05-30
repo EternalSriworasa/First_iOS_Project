@@ -20,6 +20,7 @@
 		76023FAF1EDBD9CB00344FF8 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76023FAE1EDBD9CB00344FF8 /* FeedViewController.swift */; };
 		76023FB11EDBF5AF00344FF8 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76023FB01EDBF5AF00344FF8 /* News.swift */; };
 		76FE82B41EDD309500BD8069 /* FeedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE82B31EDD309500BD8069 /* FeedDetailViewController.swift */; };
+		76FE82B61EDD652E00BD8069 /* SaveFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE82B51EDD652E00BD8069 /* SaveFeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		76023FAE1EDBD9CB00344FF8 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		76023FB01EDBF5AF00344FF8 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		76FE82B31EDD309500BD8069 /* FeedDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedDetailViewController.swift; sourceTree = "<group>"; };
+		76FE82B51EDD652E00BD8069 /* SaveFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveFeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 				76023F741EDBC2F700344FF8 /* ViewController.swift */,
 				76023FAE1EDBD9CB00344FF8 /* FeedViewController.swift */,
 				76FE82B31EDD309500BD8069 /* FeedDetailViewController.swift */,
+				76FE82B51EDD652E00BD8069 /* SaveFeedViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76023FB11EDBF5AF00344FF8 /* News.swift in Sources */,
+				76FE82B61EDD652E00BD8069 /* SaveFeedViewController.swift in Sources */,
 				76023F751EDBC2F700344FF8 /* ViewController.swift in Sources */,
 				76023F731EDBC2F700344FF8 /* AppDelegate.swift in Sources */,
 				76023FAF1EDBD9CB00344FF8 /* FeedViewController.swift in Sources */,

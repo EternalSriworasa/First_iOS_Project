@@ -28,6 +28,7 @@ class FeedViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
 
     func setupTableView() {
         self.tableView.register(UINib(nibName:"FeedTableViewCell", bundle: nil), forCellReuseIdentifier: "FeedTableViewCell")
@@ -48,16 +49,14 @@ class FeedViewController: UIViewController {
     }
     
     
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func toFeedDetailViewController(news: News) {
+        if let ViewController = self.storyboard?.instantiateViewController(withIdentifier: "FeedDetailViewController") as? FeedDetailViewController {
+            ViewController.news = news
+            self.navigationController?.pushViewController(ViewController, animated: true)
     }
-    */
+    
+}
+
 
 }
 
@@ -83,6 +82,14 @@ extension FeedViewController:UITableViewDataSource,UITableViewDelegate{
         let news:News = newArray[rowNo]
         cell.setupUI(news: news)
                 return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let rowNo = indexPath.row
+        let news:News = newArray[rowNo]
+        self.toFeedDetailViewController(news: news)
+        
+        
     }
     
 }
