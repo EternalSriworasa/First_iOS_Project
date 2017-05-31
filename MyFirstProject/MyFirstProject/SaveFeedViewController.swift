@@ -23,6 +23,14 @@ class SaveFeedViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.setupTableViewDummyData()
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -35,22 +43,15 @@ class SaveFeedViewController: UIViewController {
     }
     
     func setupTableViewDummyData() {
-        let news:News = News(title: "iOS", description: "Error lets  stop doing this", iconImage: #imageLiteral(resourceName: "cheese_flat"), author: "payut", view: 2, creatDate: "29/06/60", catagory: "Mobile")
-        let news2:News = News(title: "Adroid", description: "Error lets  stop doing this", iconImage: #imageLiteral(resourceName: "cat"), author: "jack", view: 9999, creatDate: "30/06/60", catagory: "Mobile")
-//        let news3:News = News(title: "Premier League", description: "Premier League Football News", iconImage: #imageLiteral(resourceName: "dog"), author: "Niran", view: 100, creatDate: "30/06/60", catagory: "Sport")
-//        let news4:News = News(title: "Cannes Film Festival", description: "Art world satire The Square", iconImage: #imageLiteral(resourceName: "github_512"), author: "Niran", view: 100, creatDate: "30/06/60", catagory: "Entertainment")
-//        let news5:News = News(title: "งานเข้าพรรษา", description: "บรรยากาศการแห่เทียนในจังหวัด อุบลราชธานี", iconImage: #imageLiteral(resourceName: "rocket_icon2"), author: "Niran", view: 100, creatDate: "30/06/60", catagory: "ศิลปวัฒนธรรม")
-//        
-        newArray.append(news)
-        newArray.append(news2)
-//        newArray.append(news3)
-//        newArray.append(news4)
-//        newArray.append(news5)
+        self.newArray = persist.load()
+        self.tableView.reloadData()
+        
+
     }
     
     
-    func toFeedDetailViewController(news: News) {
-        if let ViewController = self.storyboard?.instantiateViewController(withIdentifier: "FeedDetailViewController") as? FeedDetailViewController {
+    func toSaveFeedDetailViewController(news: News) {
+        if let ViewController = self.storyboard?.instantiateViewController(withIdentifier: "SaveFeedDetailViewController") as? SaveFeedDetailViewController {
             ViewController.news = news
             self.navigationController?.pushViewController(ViewController, animated: true)
         }
@@ -87,7 +88,7 @@ extension SaveFeedViewController:UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let rowNo = indexPath.row
         let news:News = newArray[rowNo]
-        self.toFeedDetailViewController(news: news)
+        self.toSaveFeedDetailViewController(news: news)
         
         
     }

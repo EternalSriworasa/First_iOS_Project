@@ -33,8 +33,8 @@ class FeedTableViewCell: UITableViewCell {
         self.iconImgView.image = news.iconImage
         self.titleLabel.text = news.title
         self.descriptionLabel.text = news.description
-        self.accessoryLabel.text = "\(news.author) -  \(news.view) view - \(news.creatDate)"
-        self.catagoryLabel.text = news.catagory
+        self.accessoryLabel.text = "\(news.author) -  \(news.view) view - \(news.createDate)"
+        self.catagoryLabel.text = news.category
 
     }
 }

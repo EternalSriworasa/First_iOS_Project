@@ -35,11 +35,11 @@ class FeedViewController: UIViewController {
     }
     
     func setupTableViewDummyData() {
-        let news:News = News(title: "iOS", description: "Error lets  stop doing this", iconImage: #imageLiteral(resourceName: "cheese_flat"), author: "payut", view: 2, creatDate: "29/06/60", catagory: "Mobile")
-        let news2:News = News(title: "Adroid", description: "Error lets  stop doing this", iconImage: #imageLiteral(resourceName: "cat"), author: "jack", view: 9999, creatDate: "30/06/60", catagory: "Mobile")
-        let news3:News = News(title: "Premier League", description: "Premier League Football News", iconImage: #imageLiteral(resourceName: "dog"), author: "Niran", view: 100, creatDate: "30/06/60", catagory: "Sport")
-        let news4:News = News(title: "Cannes Film Festival", description: "Art world satire The Square", iconImage: #imageLiteral(resourceName: "github_512"), author: "Niran", view: 100, creatDate: "30/06/60", catagory: "Entertainment")
-        let news5:News = News(title: "งานเข้าพรรษา", description: "บรรยากาศการแห่เทียนในจังหวัด อุบลราชธานี", iconImage: #imageLiteral(resourceName: "rocket_icon2"), author: "Niran", view: 100, creatDate: "30/06/60", catagory: "ศิลปวัฒนธรรม")
+        let news:News = News(id: 1, title: "iOS", description: "Error lets  stop doing this", iconImage: #imageLiteral(resourceName: "cheese_flat"), author: "payut", view: 2, createDate: "29/06/60", category: "Mobile")
+        let news2:News = News(id: 2, title: "Adroid", description: "Error lets  stop doing this", iconImage: #imageLiteral(resourceName: "cat"), author: "jack", view: 9999, createDate: "30/06/60", category: "Mobile")
+        let news3:News = News(id: 3,title: "Premier League", description: "Premier League Football News", iconImage: #imageLiteral(resourceName: "dog"), author: "Niran", view: 100, createDate: "30/06/60", category: "Sport")
+        let news4:News = News(id: 4, title: "Cannes Film Festival", description: "Art world satire The Square", iconImage: #imageLiteral(resourceName: "github_512"), author: "Niran", view: 100, createDate: "30/06/60", category: "Entertainment")
+        let news5:News = News(id: 5, title: "งานเข้าพรรษา", description: "บรรยากาศการแห่เทียนในจังหวัด อุบลราชธานี", iconImage: #imageLiteral(resourceName: "rocket_icon2"), author: "Niran", view: 100, createDate: "30/06/60", category: "ศิลปวัฒนธรรม")
 
         newArray.append(news)
         newArray.append(news2)

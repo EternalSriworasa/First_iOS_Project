@@ -19,6 +19,8 @@
 		76023FAD1EDBC6DE00344FF8 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76023FAB1EDBC6DE00344FF8 /* FeedTableViewCell.xib */; };
 		76023FAF1EDBD9CB00344FF8 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76023FAE1EDBD9CB00344FF8 /* FeedViewController.swift */; };
 		76023FB11EDBF5AF00344FF8 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76023FB01EDBF5AF00344FF8 /* News.swift */; };
+		76307CAD1EDE5D4700EB0E0E /* Persist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76307CAC1EDE5D4700EB0E0E /* Persist.swift */; };
+		76307CB31EDE83BF00EB0E0E /* SaveFeedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76307CB21EDE83BF00EB0E0E /* SaveFeedDetailViewController.swift */; };
 		76FE82B41EDD309500BD8069 /* FeedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE82B31EDD309500BD8069 /* FeedDetailViewController.swift */; };
 		76FE82B61EDD652E00BD8069 /* SaveFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FE82B51EDD652E00BD8069 /* SaveFeedViewController.swift */; };
 /* End PBXBuildFile section */
@@ -59,6 +61,8 @@
 		76023FAB1EDBC6DE00344FF8 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
 		76023FAE1EDBD9CB00344FF8 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		76023FB01EDBF5AF00344FF8 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		76307CAC1EDE5D4700EB0E0E /* Persist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persist.swift; sourceTree = "<group>"; };
+		76307CB21EDE83BF00EB0E0E /* SaveFeedDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveFeedDetailViewController.swift; sourceTree = "<group>"; };
 		76FE82B31EDD309500BD8069 /* FeedDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedDetailViewController.swift; sourceTree = "<group>"; };
 		76FE82B51EDD652E00BD8069 /* SaveFeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveFeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,6 +147,7 @@
 		76023FA31EDBC37700344FF8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				76307CAC1EDE5D4700EB0E0E /* Persist.swift */,
 				76023FB01EDBF5AF00344FF8 /* News.swift */,
 			);
 			name = Model;
@@ -166,6 +171,7 @@
 				76023FAE1EDBD9CB00344FF8 /* FeedViewController.swift */,
 				76FE82B31EDD309500BD8069 /* FeedDetailViewController.swift */,
 				76FE82B51EDD652E00BD8069 /* SaveFeedViewController.swift */,
+				76307CB21EDE83BF00EB0E0E /* SaveFeedDetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -310,8 +316,10 @@
 				76023F751EDBC2F700344FF8 /* ViewController.swift in Sources */,
 				76023F731EDBC2F700344FF8 /* AppDelegate.swift in Sources */,
 				76023FAF1EDBD9CB00344FF8 /* FeedViewController.swift in Sources */,
+				76307CAD1EDE5D4700EB0E0E /* Persist.swift in Sources */,
 				76023F7B1EDBC2F700344FF8 /* MyFirstProject.xcdatamodeld in Sources */,
 				76FE82B41EDD309500BD8069 /* FeedDetailViewController.swift in Sources */,
+				76307CB31EDE83BF00EB0E0E /* SaveFeedDetailViewController.swift in Sources */,
 				76023FAC1EDBC6DE00344FF8 /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
